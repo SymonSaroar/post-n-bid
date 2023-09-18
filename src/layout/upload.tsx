@@ -40,6 +40,7 @@ const Upload = ({navigation}: any) => {
             }})
         if(result.status == 200) {
           alert('Succesfully Uploaded Your Product')
+          navigation.navigate('Products')
         }
       } catch (e) {
         console.log('fileUpload: ', e)
